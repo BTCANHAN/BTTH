@@ -40,7 +40,12 @@ android {
 }
 
 dependencies {
-
+    implementation("androidx.navigation:navigation-compose:2.8.3")
+    implementation("androidx.compose.material3:material3:1.3.0")
+    implementation("androidx.compose.foundation:foundation:1.7.3")
+    implementation("androidx.compose.ui:ui:1.7.3")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.7.3")
+    debugImplementation("androidx.compose.ui:ui-tooling:1.7.3")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

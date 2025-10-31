@@ -1,4 +1,9 @@
-package ui
+package com.example.uthsmarttasks.ui
 
-class MainScreen {
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+
+@Composable
+fun MainScreen() {
+    Text("Welcome to UTH SmartTasks!")
 }
