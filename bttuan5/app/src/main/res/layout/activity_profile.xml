@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profileRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Nút Back + tiêu đề -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/back"
+                android:contentDescription="Back"
+                android:tint="#2196F3" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Profile"
+                android:textColor="#2196F3"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- Avatar + icon camera -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:src="@drawable/avatar"
+                android:background="@drawable/ircle_white_bg"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/imgCameraBadge"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|bottom|end"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="90dp"
+                android:src="@drawable/camera"
+                android:background="@drawable/ircle_white_bg"
+                android:padding="6dp" />
+        </FrameLayout>
+
+        <!-- Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Melissa Peters"
+            android:padding="10dp"
+            android:background="@drawable/edittext_bg"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Email"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="melpeters@gmail.com"
+            android:padding="10dp"
+            android:background="@drawable/edittext_bg"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <!-- Date of Birth -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Date of Birth"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edittext_bg"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/edtDob"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Chọn ngày sinh"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="none"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:background="@android:color/transparent" />
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/muiduoi"
+                android:tint="#777777" />
+        </LinearLayout>
+
+        <!-- Nút Back -->
+        <Button
+            android:id="@+id/btnBackFull"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+</ScrollView>
